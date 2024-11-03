@@ -10,3 +10,13 @@ export default [
   'strapi::favicon',
   'strapi::public',
 ];
+
+module.exports = {
+  settings: {
+    cors: {
+      enabled: true,
+      origin: ['https://moving-website-frontend.onrender.com'],
+      headers: ['*'],
+    },
+  },
+};
